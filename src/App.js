@@ -48,7 +48,7 @@ function App() {
     { id: 1, name: "Constraint 2" },
   ];
 
-  const arrays = [startingSpots, finitions, endingSpots, dribbles, constraints];
+  const arrays = [startingSpots, finitions, endingSpots, dribbles];
 
   function getRandomname(array) {
     const size = array.length;
@@ -66,13 +66,18 @@ function App() {
     }
   }
 
-  return (
-    <div>
-      <button onClick={handleBtn}>Générer le 1v1</button>
+  console.log(data);
 
-      {data.map((d, i) => (
-        <h3 key={i}> {d.name}</h3>
-      ))}
+  return (
+    <div className="appContainer">
+      <div className="dataContainer">
+        {data.map((d, i) => (
+          <h3 key={i}> {d.name}</h3>
+        ))}
+      </div>
+      <div className="buttonContainer">
+        <button onClick={handleBtn}>Générer le 1v1</button>
+      </div>
     </div>
   );
 }
