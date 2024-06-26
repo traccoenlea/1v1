@@ -1,7 +1,11 @@
 import { useState } from "react";
+import Players from "./Players";
+import Points from "./Points";
 
 function App() {
   const [data, setData] = useState([]);
+
+  const [numberOf1v1Played, setNumberOf1v1Played] = useState(0);
 
   const startingSpots = [
     { id: 0, name: "tête de raquette" },
@@ -58,6 +62,7 @@ function App() {
   }
 
   function handleBtn() {
+    setNumberOf1v1Played(numberOf1v1Played + 1);
     setData([]);
     for (let i = 0; i < arrays.length; i++) {
       const tab = arrays[i];
@@ -70,14 +75,17 @@ function App() {
 
   return (
     <div className="appContainer">
-      <div className="dataContainer">
+      {/* <h1>Round {numberOf1v1Played}</h1> */}
+      {/* <div className="dataContainer">
         {data.map((d, i) => (
           <h3 key={i}> {d.name}</h3>
         ))}
       </div>
       <div className="buttonContainer">
         <button onClick={handleBtn}>Générer le 1v1</button>
-      </div>
+      </div> */}
+      {/* <Players /> */}
+      <Points />
     </div>
   );
 }
