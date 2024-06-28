@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Players from "./Players";
 import Points from "./Points";
+import AddPlayer from "./AddPlayer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -84,8 +85,9 @@ function App() {
       <div className="buttonContainer">
         <button onClick={handleBtn}>Générer le 1v1</button>
       </div> */}
+      <AddPlayer />
       {/* <Players /> */}
-      <Points />
+      {/* <Points /> */}
     </div>
   );
 }
