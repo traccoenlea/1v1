@@ -76,16 +76,16 @@ function App() {
 
   return (
     <div className="appContainer">
-      {/* <h1>Round {numberOf1v1Played}</h1> */}
-      {/* <div className="dataContainer">
+      <h1>Round {numberOf1v1Played}</h1>
+      <div className="dataContainer">
         {data.map((d, i) => (
           <h3 key={i}> {d.name}</h3>
         ))}
       </div>
       <div className="buttonContainer">
         <button onClick={handleBtn}>Générer le 1v1</button>
-      </div> */}
-      <AddPlayer />
+      </div>
+      {/* <AddPlayer /> */}
       {/* <Players /> */}
       {/* <Points /> */}
     </div>

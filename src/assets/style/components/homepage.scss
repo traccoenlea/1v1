@@ -1,0 +1,60 @@
+.homepageContainer {
+  background: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+  height: 100%;
+
+  color: white;
+
+  .settings {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #222222;
+
+    position: absolute;
+    display: flex;
+    right: 10%;
+    top: 2.5%;
+  }
+
+  .playersContainer {
+    .onePlayer {
+      border-radius: 20px;
+      width: 80%;
+      margin: 20px auto;
+      height: 75px;
+      padding: 20px;
+
+      .pointsContainer {
+        background: #433633;
+        border-radius: 20px;
+        width: 15%;
+        height: 75%;
+        color: white;
+      }
+    }
+
+    .addPlayer {
+      margin: auto;
+
+      .btnBlur {
+        width: 20%;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        background: none;
+        font-size: 2rem;
+        margin: auto;
+      }
+
+      p {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+    .btnBlur,
+    .onePlayer {
+      backdrop-filter: blur(50px);
+    }
+  }
+}

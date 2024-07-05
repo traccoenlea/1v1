@@ -8,20 +8,22 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <div className="app">
-      <div className="appContainer">
+      {/* <div className="appContainer">
         <div>
           <h1>Round X</h1>
           <div>
             <h1>Data 1v1</h1>
           </div>
         </div>
-      </div>
+      </div> */}
       <Suspense>
         <Outlet />
       </Suspense>
-      <div className="navigationContainer flexc jcc">
+      {/* <div className="navigationContainer flexc jcc">
         <Nav />
-      </div>
+      </div> */}
+
+      {/* <Points /> */}
     </div>
   );
 }
