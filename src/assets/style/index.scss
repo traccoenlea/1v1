@@ -2,6 +2,41 @@
 @use "./utils.scss";
 @use "./components/homepage.scss";
 
+@font-face {
+  font-family: "Etna"; /*Can be any text*/
+  src: local("Etna"), url("../fonts/Etna-Sans-serif.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI"; /*Can be any text*/
+  src: local("Segoe UI"), url("../fonts/Segoe\ UI.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold"; /*Can be any text*/
+  src: local("Segoe UI Bold"),
+    url("../fonts/Segoe\ UI\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Italic"; /*Can be any text*/
+  src: local("Segoe UI Italic"),
+    url("../fonts/Segoe\ UI\ Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold Italic"; /*Can be any text*/
+  src: local("Segoe UI Bold Italic"),
+    url("../fonts/Segoe\ UI\ Bold\ Italic.ttf") format("truetype");
+}
+
+:root {
+  --text: "Segoe IU", sans-serif;
+  --title: "Etna", sans-serif;
+  ---primary: #222222;
+  --secondary: #1661c9;
+}
+
 // * {
 //   margin: 0;
 //   padding: 0;

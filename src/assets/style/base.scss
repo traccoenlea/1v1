@@ -1,24 +1,67 @@
 * {
   margin: 0;
   padding: 0;
-  // font-family: "League Spartan";
 }
 
 .app {
   height: 100vh;
+  background-image: url("../img/background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
-.btn {
-  background: #041d77;
-  width: 50%;
-  margin: 50px auto;
-  height: 60px;
-  color: white;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  border: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Etna";
+  letter-spacing: 0.25rem;
 }
+
+h2,
+h3 {
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--text);
+  margin: 10px 0;
+}
+
+input {
+  background: var(--secondary);
+  border: none;
+  height: 40px;
+  border-radius: 100px;
+  width: 150px;
+  color: white;
+  padding-left: 20px;
+  font-family: var(--title);
+  font-size: 2rem;
+  padding-bottom: 15px;
+  &::placeholder {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+// .btn {
+//   background: #041d77;
+//   width: 50%;
+//   margin: 50px auto;
+//   height: 60px;
+//   color: white;
+//   font-size: 2rem;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 10px;
+//   border: none;
+// }
