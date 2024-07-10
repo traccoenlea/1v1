@@ -1,0 +1,29 @@
+.playersContainer {
+  .onePlayerContainer {
+    height: 80px;
+
+    .playerData {
+      width: 80%;
+
+      .playerName {
+        font-family: var(--text);
+        padding-left: 10px;
+        font-size: 1.5rem;
+        margin-top: 3px;
+      }
+    }
+
+    .playerPoints {
+      margin: auto;
+      font-family: var(--text);
+      background-color: rgba($color: black, $alpha: 0.2);
+      border-radius: 10px;
+      width: 55px;
+      height: 55px;
+
+      div {
+        height: 50%;
+      }
+    }
+  }
+}

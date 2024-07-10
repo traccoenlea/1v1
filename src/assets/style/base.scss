@@ -19,12 +19,16 @@ h4,
 h5,
 h6 {
   font-family: "Etna";
-  letter-spacing: 0.25rem;
+  font-weight: normal;
 }
 
-h2,
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
 h3 {
-  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -49,6 +53,14 @@ input {
     color: white;
     font-size: 1.5rem;
   }
+}
+
+.constraintsContainer,
+.onePlayerContainer {
+  background-color: rgba($color: white, $alpha: 0.25);
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+  padding: 20px;
 }
 
 // .btn {
